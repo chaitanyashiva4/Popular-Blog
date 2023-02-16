@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.container {
+    background-color: #95b2ff;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.BlogsContianer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Marketing {
+    display: flex;
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/popular-blog-marketing-strategies-sm-bg.png");
+    background-size: cover;
+    border-radius: 10px;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 190px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.Coffee {
+    display: flex;
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/popular-blog-coffee-bg.png");
+    background-size: cover;
+    border-radius: 10px;
+    height: 190px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.Fruits {
+    display: flex;
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/popular-blog-fruits-bg.png");
+    background-size: cover;
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.Nature {
+    display: flex;
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/popular-blog-nature-bg.png");
+    background-size: cover;
+    border-radius: 10px;
+    height: 190px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.Laptop {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/popular-blog-laptop-sm-bg.png");
+    display: flex;
+    background-size: cover;
+    border-radius: 10px;
+    height: 190px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+
+.button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    align-self: flex-end;
+}
+
+.head {
+    font-size: 20px;
+}
+
+.Interior {
+    background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/popular-blog-interior-bg.png');
+    display: flex;
+    background-size: cover;
+    border-radius: 10px;
+    height: 190px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .Marketing {
+        flex-grow: 5;
+        background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/popular-blog-marketing-strategies-lg-bg.png');
+        background-size: cover;
+        width: 800px;
+    }
+
+    .Fruits {
+        width: 450px;
+    }
+
+    .Coffee {
+        width: 450px;
+    }
+
+    .fruitscoffe {
+        display: flex;
+    }
+
+    .NatureInterior {
+        display: flex;
+    }
+
+    .Nature {
+        width: 450px;
+    }
+
+    .Interior {
+        width: 450px;
+    }
+
+    .Laptop {
+        background-image: url('https://assets.ccbp.in/frontend/intermediate-rwd/popular-blog-laptop-lg-bg.png');
+        width: 900px;
+
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .BlogsContianer {
+        margin: 40px;
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .blogs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .Laptop {
+        order: 6;
+    }
+
+    .Interior {
+        order: 2;
+    }
+
+    .fruitscoffe {
+        order: -1;
+    }
+
+    .Nature {
+        order: 4;
+    }
+
+    .Marketing {
+        order: -3;
+        width: 300px;
+    }
+}
